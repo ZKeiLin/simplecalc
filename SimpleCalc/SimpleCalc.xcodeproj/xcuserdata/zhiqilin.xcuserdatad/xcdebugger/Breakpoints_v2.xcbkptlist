@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleCalcTests/SimpleCalcTests.swift"
+            timestampString = "569259466.544649"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ExtendedCalcTests"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleCalcTests.ExtendedCalcTests.__allocating_init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; SimpleCalcTests.ExtendedCalcTests"
+                  moduleName = "SimpleCalcTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhiqilin/Documents/class/ios%20Dev/simplecalc/SimpleCalc/SimpleCalcTests/SimpleCalcTests.swift"
+                  timestampString = "569259467.351083"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleCalcTests.ExtendedCalcTests.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; SimpleCalcTests.ExtendedCalcTests"
+                  moduleName = "SimpleCalcTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhiqilin/Documents/class/ios%20Dev/simplecalc/SimpleCalc/SimpleCalcTests/SimpleCalcTests.swift"
+                  timestampString = "569259467.35258"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "38">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleCalcTests.ExtendedCalcTests.__allocating_init(selector: ObjectiveC.Selector) -&gt; SimpleCalcTests.ExtendedCalcTests"
+                  moduleName = "SimpleCalcTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhiqilin/Documents/class/ios%20Dev/simplecalc/SimpleCalc/SimpleCalcTests/SimpleCalcTests.swift"
+                  timestampString = "569259467.3540519"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleCalcTests.ExtendedCalcTests.init(selector: ObjectiveC.Selector) -&gt; SimpleCalcTests.ExtendedCalcTests"
+                  moduleName = "SimpleCalcTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhiqilin/Documents/class/ios%20Dev/simplecalc/SimpleCalc/SimpleCalcTests/SimpleCalcTests.swift"
+                  timestampString = "569259467.3555011"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "38">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleCalcTests.ExtendedCalcTests.__allocating_init() -&gt; SimpleCalcTests.ExtendedCalcTests"
+                  moduleName = "SimpleCalcTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhiqilin/Documents/class/ios%20Dev/simplecalc/SimpleCalc/SimpleCalcTests/SimpleCalcTests.swift"
+                  timestampString = "569259467.357046"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleCalcTests.ExtendedCalcTests.init() -&gt; SimpleCalcTests.ExtendedCalcTests"
+                  moduleName = "SimpleCalcTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhiqilin/Documents/class/ios%20Dev/simplecalc/SimpleCalc/SimpleCalcTests/SimpleCalcTests.swift"
+                  timestampString = "569259467.358574"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleCalcTests.ExtendedCalcTests.__deallocating_deinit"
+                  moduleName = "SimpleCalcTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhiqilin/Documents/class/ios%20Dev/simplecalc/SimpleCalc/SimpleCalcTests/SimpleCalcTests.swift"
+                  timestampString = "569259467.3601021"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
