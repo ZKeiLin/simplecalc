@@ -23,7 +23,9 @@ public class Calculator {
                 case "/": return firstNum / secondNum
                 case "%": return firstNum % secondNum
                 case "*": return firstNum * secondNum
-                default: return 0
+                default:
+                    print("can't regonize operation")
+                    return 0
             }
         } else {
             let op = args[args.count - 1]
@@ -42,9 +44,19 @@ public class Calculator {
                 var res = 0
                 if operation.count == 1 {
                     res = 1
-                    let num = Int(operation[0])!
+                    var num = Int(operation[0])!
+                    var neg = false
+                    if num < 0 {
+                        num = -num
+                        if num % 2 == 1 {
+                            neg = true
+                        }
+                    }
                     for index in 1...num {
                         res *= index
+                    }
+                    if neg == true {
+                        res = -res
                     }
                 }
                 return res
@@ -55,7 +67,9 @@ public class Calculator {
             case "count": return numsArray.count
             case "avg": return avgFunc(numsArray)
             case "fact": return factFunc(numsArray)
-            default: return 0
+            default:
+                print("can't regonize operation")
+                return 0
             }
         }
     }
