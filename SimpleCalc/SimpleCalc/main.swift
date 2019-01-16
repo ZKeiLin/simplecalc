@@ -24,7 +24,7 @@ public class Calculator {
                 case "%": return firstNum % secondNum
                 case "*": return firstNum * secondNum
                 default:
-                    print("can't regonize operation")
+                    print("can't recognize the expression")
                     return 0
             }
         } else {
@@ -58,6 +58,8 @@ public class Calculator {
                     if neg == true {
                         res = -res
                     }
+                }else{
+                    print("Unexpected input")
                 }
                 return res
             }
@@ -68,22 +70,51 @@ public class Calculator {
             case "avg": return avgFunc(numsArray)
             case "fact": return factFunc(numsArray)
             default:
-                print("can't regonize operation")
+                print("can't recognize the expression")
                 return 0
             }
         }
     }
-    
     
     public func calculate(_ arg: String) -> Int {
         return calculate( arg.split(separator: " ").map({ substr in String(substr) }) )
     }
 }
 
+
 print("UW Calculator v1")
 print("Enter an expression separated by returns:")
+
 let first = readLine()!
-let operation = readLine()!
-let second = readLine()!
-print(Calculator().calculate([first, operation, second]))
+let words = String(first.prefix(10))
+if(words == "SimpleCalc"){
+    let expression = String(first.dropFirst(11))
+    print(Calculator().calculate("\(expression)"))
+}else {
+    let numCheck = Int(first)
+    if numCheck != nil {
+        let operation = readLine()!
+        if operation == "+" || operation == "-" || operation == "/" || operation == "%" || operation == "*" {
+            let second = readLine()!
+            print(Calculator().calculate([first, operation, second]))
+        } else {
+            var next = operation
+            var equation = first + " "
+            while next != "count" && next != "avg" && next != "fact"{
+                var numChecker = Int(next)
+                if numChecker != nil{
+                    equation = equation + " " + next
+                }else{
+                    print("Can't recognize Command!")
+                }
+                next = readLine()!
+            }
+            equation = equation + " " + next
+            print(Calculator().calculate("\(equation)"))
+        }
+    }else{
+        print("Can't recognize Command")
+    }
+}
+
 
