@@ -134,6 +134,7 @@
 				TargetAttributes = {
 					9F6C7D051F84A9CD00D7E1F5 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					9F6C7D131F84A9E700D7E1F5 = {
@@ -309,7 +310,7 @@
 				DEVELOPMENT_TEAM = 9XZ72MQG9V;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -321,7 +322,7 @@
 				DEVELOPMENT_TEAM = 9XZ72MQG9V;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

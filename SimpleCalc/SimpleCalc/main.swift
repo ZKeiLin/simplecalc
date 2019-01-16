@@ -9,6 +9,7 @@
 import Foundation
 
 public class Calculator {
+    
     public func calculate(_ args: [String]) -> Int {
         let operation = ["+", "-", "*", "/", "%"]
         if args.count < 1 {
@@ -29,46 +30,11 @@ public class Calculator {
             }
         } else {
             let op = args[args.count - 1]
-            let avgFunc = {(operation : [String]) -> Int in
-                if operation.count == 0 {
-                    return 0
-                }
-                var sum = 0;
-                for index in 0..<operation.count {
-                    sum += Int(operation[index])!
-                }
-                return sum/operation.count
-            }
-            
-            let factFunc = {(operation : [String]) -> Int in
-                var res = 0
-                if operation.count == 1 {
-                    res = 1
-                    var num = Int(operation[0])!
-                    var neg = false
-                    if num < 0 {
-                        num = -num
-                        if num % 2 == 1 {
-                            neg = true
-                        }
-                    }
-                    for index in 1...num {
-                        res *= index
-                    }
-                    if neg == true {
-                        res = -res
-                    }
-                }else{
-                    print("Unexpected input")
-                }
-                return res
-            }
-            
             let numsArray = Array(args[0..<args.count - 1])
             switch op {
             case "count": return numsArray.count
-            case "avg": return avgFunc(numsArray)
-            case "fact": return factFunc(numsArray)
+            case "avg": return avgFunc(operation: numsArray)
+            case "fact": return factFunc(operation: numsArray)
             default:
                 print("can't recognize the expression")
                 return 0
@@ -79,6 +45,35 @@ public class Calculator {
     public func calculate(_ arg: String) -> Int {
         return calculate( arg.split(separator: " ").map({ substr in String(substr) }) )
     }
+    
+    private func avgFunc (operation : [String]) -> Int{
+        if operation.count == 0 {
+            return 0
+        }
+        var sum = 0;
+        for index in 0..<operation.count {
+            sum += Int(operation[index])!
+        }
+        return sum/operation.count
+    }
+    
+    private func factFunc (operation : [String]) -> Int{
+        var res = 0
+        if operation.count == 1 {
+            res = 1
+            let num = Int(operation[0])!
+            if num < 0 {
+                print("Factorial is for non-negative numbers only")
+            }
+            for index in 1...num {
+                res *= index
+            }
+        }else{
+            print("Unexpected input")
+        }
+        return res
+    }
+    
 }
 
 
@@ -90,7 +85,7 @@ let words = String(first.prefix(10))
 if(words == "SimpleCalc"){
     let expression = String(first.dropFirst(11))
     print(Calculator().calculate("\(expression)"))
-}else {
+} else {
     let numCheck = Int(first)
     if numCheck != nil {
         let operation = readLine()!
@@ -101,7 +96,7 @@ if(words == "SimpleCalc"){
             var next = operation
             var equation = first + " "
             while next != "count" && next != "avg" && next != "fact"{
-                var numChecker = Int(next)
+                let numChecker = Int(next)
                 if numChecker != nil{
                     equation = equation + " " + next
                 }else{
